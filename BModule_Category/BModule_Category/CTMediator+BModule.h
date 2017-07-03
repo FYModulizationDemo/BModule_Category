@@ -15,4 +15,7 @@ typedef void(^BModuleBlock)(void);
 
 - (UIViewController *)BModule_viewController;
 
+- (void)BModule_showLogMessage:(NSString *)messag;
+
+- (void)BModel_showAlertTitle:(NSString *)title message:(NSString *)message confirmBlock:(BModuleBlock)confirmBlock cancelBlock:(BModuleBlock)cancelBlock;
 @end
