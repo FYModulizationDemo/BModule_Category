@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BModule_Category"
-  s.version      = "1"
+  s.version      = "2"
   s.summary      = "BModule_Category."
 
   # This description is used to generate tags and improve search results.
@@ -135,6 +135,6 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "BLNetworking"
   # s.dependency "BLAPIManagers"
-  # s.dependency "BLMediator"
+  s.dependency "CTMediator"
 
 end

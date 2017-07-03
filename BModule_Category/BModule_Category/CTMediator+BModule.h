@@ -13,6 +13,6 @@ typedef void(^BModuleBlock)(void);
 
 @interface CTMediator (BModule)
 
-- (UIViewController *)AModule_viewController;
+- (UIViewController *)BModule_viewController;
 
 @end

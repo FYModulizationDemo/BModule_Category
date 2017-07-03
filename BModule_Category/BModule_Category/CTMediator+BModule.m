@@ -10,7 +10,7 @@
 
 @implementation CTMediator (BModule)
 
-- (UIViewController *)AModule_viewController {
+- (UIViewController *)BModule_viewController {
     return [self performTarget:@"BModule" action:@"viewController" params:nil shouldCacheTarget:NO];
 }
 
