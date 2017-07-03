@@ -21,7 +21,7 @@
     [self performTarget:@"BModule" action:@"showLog" params:[params copy] shouldCacheTarget:NO];
 }
 
-- (void)BModel_showAlertTitle:(NSString *)title message:(NSString *)message confirmBlock:(BModuleBlock)confirmBlock cancelBlock:(BModuleBlock)cancelBlock {
+- (UIAlertController *)BModel_showAlertTitle:(NSString *)title message:(NSString *)message confirmBlock:(BModuleBlock)confirmBlock cancelBlock:(BModuleBlock)cancelBlock {
     
     NSMutableDictionary *params = [@{} mutableCopy];
     params[@"title"] = @"hello";
@@ -29,7 +29,7 @@
     params[@"confirmBlock"] = confirmBlock;
     params[@"cancelBlock"] = cancelBlock;
     
-    [self performTarget:@"BModule" action:@"showAlert" params:[params copy] shouldCacheTarget:NO];
+    return [self performTarget:@"BModule" action:@"showAlert" params:[params copy] shouldCacheTarget:NO];
 }
 
 @end
